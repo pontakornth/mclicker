@@ -1,7 +1,7 @@
 const getters = {
   isBuyable (state) {
     return (cost) => {
-      return state.clicked_times >= cost
+      return state.clickedTimes >= cost
     }
   }
 }

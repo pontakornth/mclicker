@@ -1,5 +1,5 @@
 let state = {
-  clicked_times: 0,
+  clickedTimes: 0,
   power: 1
 }
 export default state

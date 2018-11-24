@@ -1,21 +1,15 @@
 <template>
-  <div>
-    Buy these
-    <item v-bind:cost=2 name="Kitchen Knife" v-bind:power="2"></item>
-  </div>
+  <button v-bind:disabled="!(isBuyable(cost))" @click="buyAndSetPower({cost:cost, power:power})">{{name}}</button>
 </template>
 
 <script>
-import Item from './Item.vue'
 import { mapActions, mapGetters } from 'vuex'
 export default {
   methods: {
     ...mapActions(['buyAndSetPower'])
   },
   computed: mapGetters(['isBuyable']),
-  components: {
-    Item
-  }
+  props: ['cost', 'power', 'name']
 }
 </script>
 

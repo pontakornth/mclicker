@@ -1,5 +1,5 @@
 <template>
-  <button v-bind:disabled="!(isBuyable(cost))" @click="buyAndSetPower({cost:cost, power:power})">{{name}}</button>
+  <button class="item" v-bind:disabled="!(isBuyable(cost))" @click="buyAndSetPower({cost:cost, power:power})">{{name}}</button>
 </template>
 
 <script>
@@ -14,5 +14,16 @@ export default {
 </script>
 
 <style>
-
+.item {
+  width: 100px;
+  height: 36px;
+  border-style: solid;
+  border-color: aliceblue;
+  background-color: blue;
+  color: aliceblue;
+  border-radius: 60px;
+}
+.item:disabled {
+  background-color: gray;
+}
 </style>

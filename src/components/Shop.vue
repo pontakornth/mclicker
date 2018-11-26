@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="shop">
     Buy these
     <item v-bind:cost=2 name="Kitchen Knife" v-bind:power="2"></item>
   </div>
@@ -20,5 +20,10 @@ export default {
 </script>
 
 <style>
-
+.shop {
+  background-color: brown;
+  font-size: 16px;
+  color: whitesmoke;
+  margin: 20px;
+}
 </style>

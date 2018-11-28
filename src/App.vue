@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
     <clicker-box/>
     <shop></shop>
   </div>
@@ -9,7 +8,6 @@
 <script>
 import ClickerBox from './components/ClickerBox'
 import Shop from './components/Shop'
-
 export default {
   name: 'App',
   components: {
@@ -27,5 +25,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
 }
 </style>

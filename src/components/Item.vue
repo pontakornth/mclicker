@@ -22,6 +22,7 @@ export default {
   background-color: blue;
   color: aliceblue;
   border-radius: 60px;
+  margin: 20px;
 }
 .item:disabled {
   background-color: gray;

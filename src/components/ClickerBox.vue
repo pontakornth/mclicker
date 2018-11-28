@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1> Wow, you clicked {{clickedTimes}} </h1>
-    <button @click="click">Click me</button>
+    <button class="click-this" @click="click">Click me</button>
   </div>
 </template>
 
@@ -14,5 +14,12 @@ export default {
 </script>
 
 <style>
-
+.click-this {
+  color: white;
+  background-color: darkblue;
+  border-style: solid;
+  border-color: black;
+  border-width: 5px;
+  border-radius: 12px;
+}
 </style>

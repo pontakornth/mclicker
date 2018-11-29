@@ -11,7 +11,7 @@ import { mapActions, mapGetters } from 'vuex'
 import weapons from '../weapons'
 export default {
   methods: {
-    ...mapActions(['buyAndSetPower'])
+    ...mapActions(['buyAndpowerUp'])
   },
   computed: mapGetters(['isBuyable']),
   data: () => {

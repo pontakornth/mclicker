@@ -1,12 +1,12 @@
 <template>
-  <button class="item" v-bind:disabled="!(isBuyable(cost))" @click="buyAndSetPower({cost:cost, power:power})">{{name}}</button>
+  <button class="item" v-bind:disabled="!(isBuyable(cost))" @click="buyAndPowerUp({cost:cost, power:power})">{{name}}</button>
 </template>
 
 <script>
 import { mapActions, mapGetters } from 'vuex'
 export default {
   methods: {
-    ...mapActions(['buyAndSetPower'])
+    ...mapActions(['buyAndPowerUp'])
   },
   computed: mapGetters(['isBuyable']),
   props: ['cost', 'power', 'name']

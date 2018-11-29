@@ -5,15 +5,15 @@ const actions = {
   reset ({commit}) {
     commit('resetClicker')
   },
-  setPower ({commit}, power) {
-    commit('setPower', {amount: power})
+  powerUp ({commit}, power) {
+    commit('powerUp', {amount: power})
   },
   buy ({commit}, cost) {
     commit('spendClick', {amount: cost})
   },
-  buyAndSetPower ({commit, dispatch}, payload) {
+  buyAndPowerUp ({commit, dispatch}, payload) {
     dispatch('buy', payload.cost)
-    dispatch('setPower', payload.power)
+    dispatch('powerUp', payload.power)
   }
 }
 

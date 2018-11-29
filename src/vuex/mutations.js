@@ -6,8 +6,8 @@ const mutations = {
     state.clickedTimes = 0
     state.power = 1
   },
-  setPower (state, payload) {
-    state.power = payload.amount
+  powerUp (state, payload) {
+    state.power += payload.amount
   },
   spendClick (state, payload) {
     state.clickedTimes = state.clickedTimes - payload.amount

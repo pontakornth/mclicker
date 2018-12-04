@@ -1,8 +1,15 @@
 <template>
-  <div id="app">
+  <diV id="app">
     <clicker-box/>
     <shop></shop>
-  </div>
+    <div>
+      <p>
+        Created by Pontakorn Paesaeng
+        <br>
+        PC only for now
+      </p>
+    </div>
+  </diV>
 </template>
 
 <script>

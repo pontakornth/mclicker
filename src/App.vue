@@ -1,22 +1,30 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <diV id="app">
+    <clicker-box/>
+    <shop></shop>
+    <div>
+      <p>
+        Created by Pontakorn Paesaeng
+        <br>
+        PC only for now
+      </p>
+    </div>
+  </diV>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import ClickerBox from './components/ClickerBox'
+import Shop from './components/Shop'
 export default {
-  name: 'app',
+  name: 'App',
   components: {
-    HelloWorld
+    ClickerBox,
+    Shop
   }
 }
 </script>
 
-<style lang="less">
+<style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -24,5 +32,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
 }
 </style>

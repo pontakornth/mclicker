@@ -1,4 +1,4 @@
-#MClicker
+# MClicker
 
 Just a simple clicker game with Vue.js
 

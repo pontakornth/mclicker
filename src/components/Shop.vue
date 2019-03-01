@@ -1,8 +1,6 @@
 <template>
-  <div class="shop">
-    <p class="desc">Buy these</p>
+  <div>
     <item v-for="weapon in weapons" v-bind:key="weapon.id" v-bind:cost="weapon.cost" v-bind:name="weapon.name" v-bind:power="weapon.power"></item>
-    <item cost="90" name="Knife" power="9000"/>
   </div>
 </template>
 
@@ -25,22 +23,4 @@ export default {
 </script>
 
 <style>
-.shop {
-  width: 80%;
-  padding-bottom: 100px;
-  display: flex;
-  background-color: brown;
-  font-size: 16px;
-  color: whitesmoke;
-  margin: 20px;
-  flex-flow: row;
-  padding: 10px;
-  border-style: solid;
-  border-width: 15px;
-  border-color: black;
-  border-radius: 12px;
-}
-.desc {
-  align-self: center
-}
 </style>

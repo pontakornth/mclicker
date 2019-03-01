@@ -14,6 +14,12 @@ const actions = {
   buyAndPowerUp ({ commit, dispatch }, payload) {
     dispatch('buy', payload.cost)
     dispatch('powerUp', payload.power)
+  },
+  startGame ({ commit }) {
+    commit('startGame')
+  },
+  endGame ({ commit }) {
+    commit('endGame')
   }
 }
 

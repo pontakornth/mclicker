@@ -11,6 +11,12 @@ const mutations = {
   },
   spendClick (state, payload) {
     state.clickedTimes = state.clickedTimes - payload.amount
+  },
+  startGame (state) {
+    state.isStarted = true
+  },
+  endGame (state) {
+    state.isStarted = false
   }
 }
 export default mutations

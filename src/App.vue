@@ -1,7 +1,16 @@
 <template>
-  <diV id="app">
-    <clicker-box/>
-    <shop></shop>
+  <div id="app">
+    <q-layout>
+      <q-page-container>
+        <q-page padding>
+    <!-- <timer></timer> -->
+    <q-card class="col-8 centered">
+      <q-card-main>
+        <clicker-box/>
+            <p class="desc">Buy these</p>
+        <shop/>
+      </q-card-main>
+    </q-card>
     <div>
       <p>
         Created by Pontakorn Paesaeng
@@ -9,32 +18,29 @@
         PC only for now
       </p>
     </div>
-  </diV>
+        </q-page>
+      </q-page-container>
+    </q-layout>
+  </div>
 </template>
 
 <script>
 import ClickerBox from './components/ClickerBox'
 import Shop from './components/Shop'
+// import Timer from './components/Timer'
 export default {
   name: 'App',
   components: {
     ClickerBox,
     Shop
+  //  Timer
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-  display: flex;
-  flex-flow: column wrap;
+.centered {
+  align-content: center;
   justify-content: center;
-  align-items: center;
 }
 </style>

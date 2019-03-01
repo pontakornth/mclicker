@@ -1,5 +1,5 @@
 <template>
-  <button class="item" v-bind:disabled="!(isBuyable(cost))" @click="buyAndPowerUp({cost:cost, power:power})">{{name}}</button>
+  <q-btn color="primary q-ma-sm"  v-bind:disabled="!(isBuyable(cost))" @click="buyAndPowerUp({cost:cost, power:power})">{{name}}</q-btn>
 </template>
 
 <script>
@@ -14,17 +14,4 @@ export default {
 </script>
 
 <style>
-.item {
-  width: 100px;
-  height: 36px;
-  border-style: solid;
-  border-color: aliceblue;
-  background-color: blue;
-  color: aliceblue;
-  border-radius: 60px;
-  margin: 20px;
-}
-.item:disabled {
-  background-color: gray;
-}
 </style>
